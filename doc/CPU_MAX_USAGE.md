@@ -9,7 +9,7 @@ This option is just hint for automatic configuration and can't precise define CP
 {
     ...
     "cpu": {
-        "max-threads-hint": 100,
+        "max-threads-hint": 80,
         ...
     },
     ...
@@ -17,10 +17,10 @@ This option is just hint for automatic configuration and can't precise define CP
 ```
 
 #### Command line
-`--cpu-max-threads-hint 100`
+`--cpu-max-threads-hint 80`
 
 ### Known issues and usage
 
 * This option has no effect if miner already generated CPU configuration, to prevent config generation use `"autosave":false,`.
-* Only threads count can be changed, for 1 core CPU this option has no effect, for 2 core CPU only 2 values possible 50% and 100%, for 4 cores: 25%, 50%, 75%, 100%. etc. 
+* Only threads count can be changed, for 1 core CPU this option has no effect, for 2 core CPU only 2 values possible 50% and 80%, for 4 cores: 25%, 50%, 75%, 80%. etc. 
 * You CPU may limited by other factors, eg cache.
